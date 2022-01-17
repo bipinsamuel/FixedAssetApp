@@ -1,3 +1,4 @@
+using FixedAssetApp.API.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +28,7 @@ namespace FixedAssetApp.API
         {
 
             services.AddControllers();
+            services.RegisterDependencies();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FixedAssetApp.API", Version = "v1" });
