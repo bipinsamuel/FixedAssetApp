@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FixedAssetApp.Business.Interfaces
+namespace FixedAssetApp.Data.Interfaces
 {
-    public interface IAssetService
+    public interface IAssetRepository
     {
         Task Add(Asset asset);
         Task Update(Asset asset);

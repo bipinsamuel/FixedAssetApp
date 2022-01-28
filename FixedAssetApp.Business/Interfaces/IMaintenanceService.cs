@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace FixedAssetApp.Business.Interfaces
 {
-    public interface IAssetService
+    public interface IMaintenanceService
     {
-        Task Add(Asset asset);
-        Task Update(Asset asset);
+        Task Add(Maintenance maintenance);
+        Task Update(Maintenance maintenance);
         Task Delete(int id);
-        Asset GetAsset(int id);
-        IEnumerable<Asset> GetAllAssets();
+        Asset GetMaintenance(int id);
+        IEnumerable<Maintenance> GetAllMaintenances();
     }
 }

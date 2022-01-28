@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FixedAssetApp.Data\FixedAssetApp.Data.csproj" />
+  </ItemGroup>
+
 </Project>

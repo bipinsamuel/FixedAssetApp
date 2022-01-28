@@ -10,12 +10,12 @@ namespace FixedAssetApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AssetController : ControllerBase
-    {        
-        private IAssetService _service;
-        public AssetController(IAssetService assetService)
+    public class TransactionController : ControllerBase
+    {
+        private ITransactionService _transactionService;
+        public TransactionController(ITransactionService transactionService)
         {
-            _service = assetService;
+            _transactionService = transactionService;
         }
     }
 }

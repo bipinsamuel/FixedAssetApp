@@ -10,12 +10,12 @@ namespace FixedAssetApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AssetController : ControllerBase
-    {        
-        private IAssetService _service;
-        public AssetController(IAssetService assetService)
+    public class DashboardController : ControllerBase
+    {
+        private IDashboardService _dashboardService;
+        public DashboardController(IDashboardService dashboardService)
         {
-            _service = assetService;
+            _dashboardService = dashboardService;
         }
     }
 }

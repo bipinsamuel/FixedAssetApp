@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace FixedAssetApp.Business.Interfaces
 {
-    public interface IAssetService
+    public interface ITransactionService
     {
-        Task Add(Asset asset);
-        Task Update(Asset asset);
+        Task Add(Transaction transaction);
+        Task Update(Transaction transaction);
         Task Delete(int id);
-        Asset GetAsset(int id);
-        IEnumerable<Asset> GetAllAssets();
+        Asset GetTransaction(int id);
+        IEnumerable<Transaction> GetAllTransactions();
     }
 }

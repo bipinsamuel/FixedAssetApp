@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace FixedAssetApp.Business.Services
 {
-    public class AssetService : IAssetService
+    public class MaintenanceService : IMaintenanceService
     {
-        private IAssetRepository _assetRepository;
-        public AssetService(IAssetRepository assetRepository)
+        private IMaintenanceRepository _maintenanceRepository;
+        public MaintenanceService(IMaintenanceRepository maintenanceRepository)
         {
-            _assetRepository = assetRepository;
+            _maintenanceRepository = maintenanceRepository;
         }
 
-        public Task Add(Asset asset)
+        public Task Add(Maintenance maintenance)
         {
             throw new NotImplementedException();
         }
@@ -27,17 +27,17 @@ namespace FixedAssetApp.Business.Services
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Asset> GetAllAssets()
+        public IEnumerable<Maintenance> GetAllMaintenances()
         {
             throw new NotImplementedException();
         }
 
-        public Asset GetAsset(int id)
+        public Asset GetMaintenance(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task Update(Asset asset)
+        public Task Update(Maintenance maintenance)
         {
             throw new NotImplementedException();
         }
